@@ -69,11 +69,30 @@ h2,
 
 }
 
+.content-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
 .content-card {
     background-color: var(--medium-gray);
     border-radius: 5px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 100%; /* Allow cards to grow */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: center; /* Center content vertically */
+    min-height: 200px; /* Minimum height to maintain size */
+    text-align: center; /* Center the text horizontally */
+}
+
+.content-card h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.content-card p {
+    margin: 0; /* Remove margins for consistent spacing */
 }
 
 
@@ -247,3 +266,9 @@ p {
       display: none;
     }
   }
+
+  /* Add this to your CSS file */
+.page-header,
+.content-section {
+    padding-top: 70px; /* Adjust based on navbar height */
+}

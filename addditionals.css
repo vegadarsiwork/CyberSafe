@@ -182,3 +182,8 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+/* Add this to your CSS file */
+.page-header,
+.content-section {
+    padding-top: 70px; /* Adjust based on navbar height */
+}

@@ -55,13 +55,20 @@
         .footer-link {
             color: #39ff14 !important; /* Neon green */
         }
+        
+        /* Add this to your CSS file */
+        .page-header,
+        .feedback-form {
+            padding-top: 70px; /* Adjust based on navbar height */
+        }
+
     </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">cybersafe.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,21 +79,27 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link" href="privacy-basics.html">Privacy Basics</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link" href="fundamentals.html">Fundamentals</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link" href="tools.html">Tools</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link" href="safetytips.html">Safety Tips</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Feedback</a>
                     </li>
+                    <li class="nav-item mx-2"> </li> <!-- Pipe separator -->
                     <li class="nav-item">
                         <a class="nav-link" href="additionals.html">Additional Resources</a>
                     </li>
@@ -125,10 +138,10 @@
             </div>
         </div>
     </section>
-
+    <br><br><br><br>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container text-center">
+    <footer class="cybersafe-footer">
+        <div class="container py-4 text-center">
             <p>Made by Vineeth, Rishi, and Vega.</p>
             <p>Follow us on Instagram:
                 <a href="https://www.instagram.com/vineeth_kumar_official/" target="_blank" class="footer-link">Vineeth</a> |
@@ -140,6 +153,18 @@
 
     <!-- Bootstrap JS (optional for interactive components) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "mu-ZOcaBu9Ul2N3ACpm73",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="mu-ZOcaBu9Ul2N3ACpm73"
+        domain="www.chatbase.co"
+        defer>
+        </script>
 </body>
 
 </html>
