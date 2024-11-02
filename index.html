@@ -69,7 +69,8 @@
         <img src="https://i.ibb.co/QpG3fpr/cybersafe-logo-final.png" alt="CyberSafe Logo" />
         <h1>Welcome to CyberSafe</h1>
         <p>Your gateway to understanding privacy and cybersecurity.</p>
-        <button class="btn btn-outline button1"><a href="#contentmain">Get Started</a></button>
+        <button class="btn btn-outline button1" onclick="scrollToContent()">Get Started</button>
+
         </div>
     </section>
 
@@ -154,6 +155,13 @@
         domain="www.chatbase.co"
         defer>
         </script>
+    <script>
+        function scrollToContent() {
+            const contentSection = document.getElementById('contentmain');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        </script>
+        
 </body>
 
 </html>

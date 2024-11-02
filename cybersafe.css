@@ -304,3 +304,93 @@ p {
     outline: none;
     box-shadow: none;
 }
+
+/* Fade-in Animation for Hero Section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-hero-overlay img,
+.main-hero-overlay h1,
+.main-hero-overlay p,
+.main-hero-overlay .button1 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Delay for each element in hero section */
+.main-hero-overlay img {
+    animation-delay: 0.3s;
+}
+
+.main-hero-overlay h1 {
+    animation-delay: 0.6s;
+}
+
+.main-hero-overlay p {
+    animation-delay: 0.9s;
+}
+
+.main-hero-overlay .button1 {
+    animation-delay: 1.2s;
+}
+
+/* Hover Effect for Content Cards with Green Shadow */
+.content-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(57, 255, 20, 0.5); /* Neon green shadow */
+}
+
+
+
+.content-section .row {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Animated state when visible */
+.content-section .row.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* Button glow effect */
+.nav-link, .footer-link {
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link:hover, .footer-link:hover {
+    color: #00ff00;
+}
+.nav-link::after, .footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #00ff00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.nav-link:hover::after, .footer-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Text fade-in effect for list items */
+ul li {
+    transition: color 0.3s ease;
+}
+ul li:hover {
+    color: #00ff00; /* Or choose another highlight color that matches your theme */
+}

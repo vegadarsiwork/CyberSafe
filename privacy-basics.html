@@ -161,6 +161,27 @@
         domain="www.chatbase.co"
         defer>
         </script>
+        <!-- JavaScript for Animations -->
+<!-- JavaScript for Slide-Up Animation -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Show all rows initially
+        const rows = document.querySelectorAll(".content-section .row");
+        rows.forEach(row => row.classList.add("visible"));
+    });
+
+    document.addEventListener("scroll", function() {
+        const rows = document.querySelectorAll(".content-section .row");
+        rows.forEach(row => {
+            const rect = row.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.85) {
+                row.classList.add("visible");
+            }
+        });
+    });
+</script>
+
+
 </body>
 
 </html>
