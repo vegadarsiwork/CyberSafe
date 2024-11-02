@@ -272,3 +272,35 @@ p {
 .content-section {
     padding-top: 70px; /* Adjust based on navbar height */
 }
+
+/* Style the Hamburger Icon */
+.navbar-toggler {
+    border: none; /* Remove the default border */
+    outline: none; /* Remove outline on focus */
+    padding: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Space between lines */
+}
+
+/* Individual lines */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--neon-green);
+    border-radius: 2px; /* Smooth edges for aesthetic */
+}
+
+/* Remove background/border when focused */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
