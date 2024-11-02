@@ -141,9 +141,14 @@ h2,
 }
 
 /* Link Styling */
-a, a:hover, a:focus {
+a {
     color: var(--yellow-highlight);
     text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: var(--yellow-highlight);
 }
 
 /* Image Styles */
@@ -176,3 +181,4 @@ a, a:hover, a:focus {
     color: var(--yellow-highlight);
     text-decoration: underline;
 }
+
