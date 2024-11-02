@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open cybersafe.html",
-            "file": "c:\\Users\\ADMIN\\Desktop\\CyberSafe\\cybersafe.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\ADMIN\\Desktop\\CyberSafe\\index.html"
         }
     ]
 }
